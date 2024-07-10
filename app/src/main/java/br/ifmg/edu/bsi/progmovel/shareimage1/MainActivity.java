@@ -121,6 +121,14 @@ public class MainActivity extends AppCompatActivity {
         startNovoTexto.launch(intent);
     }
 
+    public void iniciarMudarCor(View v) {
+        Intent intent = new Intent(this, NovoTextoActivity.class);
+        intent.putExtra(NovoTextoActivity.EXTRA_TEXTO_ATUAL, memeCreator.getTexto());
+        intent.putExtra(NovoTextoActivity.EXTRA_COR_ATUAL, converterCor(memeCreator.getCorTexto()));
+
+        startNovoTexto.launch(intent);
+    }
+
     public String converterCor(int cor) {
         switch (cor) {
             case Color.BLACK: return "BLACK";
