@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".NovaCorActivity">
 
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:onClick="enviarNovoCor"
+        android:text="@string/salvar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCor" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="69dp"
@@ -18,9 +29,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/etCor"
+        android:layout_width="226dp"
+        android:layout_height="51dp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:inputType="text"
